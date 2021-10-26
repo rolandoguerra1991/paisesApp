@@ -1,1 +1,47 @@
-<p>por-pais works!</p>
+<h2>Port pais</h2>
+<div class="row">
+  <div class="col">
+    <form
+      (ngSubmit)="buscar()"
+      autocomplete="off">
+      <input
+        type="text"
+        name="termino"
+        class="form-control"
+        placeholder="Buscar Pais"
+        [(ngModel)]="termino"
+      />
+    </form>
+  </div>
+</div>
+
+<hr>
+<div class="alert alert-danger">
+  no se encontro nada con el término SDSD
+</div>
+<div class="row">
+  <div class="col">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <td>#</td>
+            <td>Bandera</td>
+            <td>Nombre</td>
+            <td>Población</td>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>sdfsdf</td>
+            <td>sdfsdf</td>
+            <td>sdfsdfd</td>
+            <td>
+              <a href="#">Ver Pais</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
